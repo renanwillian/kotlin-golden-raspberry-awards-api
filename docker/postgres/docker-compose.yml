@@ -1,0 +1,9 @@
+version: "3"
+services:
+  db:
+    build: .
+    container_name: "postgres-golden-raspberry-awards-api"
+    ports:
+      - "5432:5432"
+    env_file:
+      - properties.env
